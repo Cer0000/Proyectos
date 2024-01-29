@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #0a0911;
+    display: grid;
+    place-content: center;
+}
+
+
+.text{
+    color: #c5c5c5;
+    font-family: 'Inconsolata', monospace;
+    position: relative;
+    bottom: 1em;
+    font-size: 5em;
+    margin: -120px;
+}
+
+
+.cloud1{
+    width: 2.4em;
+    height: 2.4em;
+    position: relative;
+    left: 2em;
+    margin: -15px;
+    background-color: #c5c5c5;
+    border-radius: 5em;
+    animation: cloud_ 5s linear infinite;
+}
+.cloud2{
+    width: 10em;
+    height: 3em;
+    background-color: #c5c5c5;
+    box-shadow: 0px 0px 0px 1px #c5c5c5;
+    border-radius: 5em;
+    animation: cloud 5s linear infinite;
+}
+.cloud3{
+    width: 6em;
+    height: 6em;
+    position: relative;
+    bottom: 5.2em;
+    left: 3.7em;
+    margin: -15px;
+    background-color: #c5c5c5;
+    border-radius: 5em;
+    animation: cloud_ 5s linear infinite;
+}
+@keyframes cloud_{
+    19%{
+        background-color: #c5c5c5;
+    }
+    20%{
+        background-color: #ddd;
+    }
+    22%{
+        background-color: #ddd;
+    }
+    24%{
+        background-color: #ddd;
+    }
+    25%{
+        background-color: #ddd;
+    }
+    30%{
+        background-color: #c5c5c5;
+    }
+}
+@keyframes cloud{
+    0%{
+        box-shadow: 0px 0px 0px 0px #c5c5c5;
+    }
+    19%{
+        box-shadow: 0px 0px 0px 0px #c5c5c5;
+        background-color: #c5c5c5;
+    }
+    20%{
+        box-shadow: 0px 0px 80px 20px #c5c5c5;
+        background-color: #ddd;
+    }
+    22%{
+        box-shadow: 0px 0px 20px 0px #c5c5c5;
+        background-color: #ddd;
+    }
+    24%{
+        box-shadow: 0px 0px 40px 10px #c5c5c5;
+        background-color: #ddd;
+    }
+    25%{
+        box-shadow: 0px 0px 0px 0px #c5c5c5;
+        background-color: #ddd;
+    }
+    30%{
+        box-shadow: 0px 0px 0px 0px #c5c5c5;
+        background-color: #c5c5c5;
+    }
+    100%{
+        box-shadow: 0px 0px 0px 0px #c5c5c5;
+    }
+}
+
+.rain{
+    position: relative;
+    bottom: 50px;
+    display: flex;
+    padding: 0 20px;
+}
+.rain span{
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background: aqua;
+    margin: 0 2px;
+    border-radius: 50%;
+    animation: anim 2.5s linear infinite;
+    animation-duration: calc(10s / var(--i));
+    transform-origin: bottom;
+}
+@keyframes anim{
+    0%{
+        transform: translateY(0) scale(1, 2.5);
+    }
+    70%{
+        transform: translateY(200px) scale(1, 2.5);
+    }
+    100%{
+        transform: translateY(200px) scale(.1, 0);
+    }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Barlow:wght@700&family=Bebas+Neue&family=Covered+By+Your+Grace&family=Inconsolata&family=Nunito:ital,wght@1,300&family=Roboto&family=Roboto+Mono:wght@700&family=Tilt+Prism&display=swap');
